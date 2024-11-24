@@ -14,7 +14,7 @@ https://www.figma.com/file/HZDlsUDARv2HxZJWSnLic0/%D0%9A%D1%83%D1%80%D1%81-%D0%9
 
 github repo:
 
-
+https://github.com/sergeybabann/javajcript-_from_scratch-language_basics_and_practice_for_beginners.original-babann
 
 - lesson complete: 03 Старт проекта -> 09 подключение js файлов
 
