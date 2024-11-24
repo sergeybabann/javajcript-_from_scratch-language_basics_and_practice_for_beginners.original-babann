@@ -16,7 +16,7 @@ github repo:
 
 https://github.com/sergeybabann/javajcript-_from_scratch-language_basics_and_practice_for_beginners.original-babann
 
-- lesson complete: 03 Старт проекта -> 09 подключение js файлов
+- lesson complete: 03 Старт проекта --> 10 Работа с git и GitHub complete
 
 - video stop: 
 
