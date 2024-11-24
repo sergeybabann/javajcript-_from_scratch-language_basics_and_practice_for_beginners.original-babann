@@ -16,8 +16,6 @@ github repo:
 
 https://github.com/sergeybabann/javajcript-_from_scratch-language_basics_and_practice_for_beginners.original-babann
 
-- lesson complete: 04 Основы --> 11 Переменные и значения
-
-- video stop: 04 Основы --> 
+- video stop: 
 
 -----------------------------------------------------------------------------------------------------------------
