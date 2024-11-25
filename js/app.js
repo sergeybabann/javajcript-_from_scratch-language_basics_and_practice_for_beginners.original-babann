@@ -1,36 +1,24 @@
-// типы данных
-const age = 18 // number
-const surname = 'Иванов' // string
-const isAdmin = true // boolean
-let data // undefined
-let data2 // null
-const admin = Symbol('Admin') // Symbol
-const big = BigInt(999999999999999) // BigInt
+/* 
+----- Упражнение - Расчет проекта -----
 
-// number
-let a = 5
-let b = 5.6
-console.log(typeof a) // number
+Ваша часовая ставка 80$ и вы готовы работать не
+более 5 часов в день 5 дней в неделю (кроме выходных).
+К вам приходит заказчик и предлагает заказ на 40
+часов работы.
+Сейчас понедельник.
+Вы должны уехать через 11 дней.
+Выведете в консоль:
+- Boolean переменную успеете ли вы взяться за работу
+- Сколько вы за неё попросите?
+*/
 
-// string
-a = 'строка'
-console.log(typeof a) // string
+// данные
+const payRateUSD = 80 // ставка оплаты в час
+const projectHours = 40 // рабочие часы в неделю
+const availableHours = (11 - 2) * 5
+/* количество дней отведенных на работу для выполнения заказа, -2 потому что
+2 выходных, и есть всего 5 часов в день */
 
-// boolean
-const isAdmin2 = false //
-console.log(typeof isAdmin2) // boolean
-
-let user_1 = a > 10 //
-console.log(typeof user_1) // boolean
-
-// undefined
-let c
-console.log(typeof c) // undefined
-c = 5
-console.log(typeof c) // number
-
-// null
-let d = null
-console.log(typeof d) // object
-let d2 = null
-console.log(d == null) // true
+// Результат
+console.log('Смогу ли я работать? ' + (availableHours > projectHours))
+console.log('Стоимость работ: ' + projectHours * payRateUSD + '$')
