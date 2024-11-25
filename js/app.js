@@ -1,17 +1,17 @@
-let age = 18 + 5
-age += 2 // age =age + 2
-age -= 2 // age = age - 2
-age *= 2 // age = age * 2
-age /= 2 // age = age / 2
+// порядок исполнения операторов
 
-age++ // age = age + 1
-age-- // age = age - 1
-console.log(age)
+const isSuited = 190 - 10 > 90 - 5
+console.log(isSuited)
 
-// операторы сравнения
-const vasia = 20
-console.log(age > vasia)
-console.log(age >= vasia)
-console.log(age < vasia)
-console.log(age <= vasia)
-console.log(age == vasia)
+// 100 - (12-приоритет) 10 > (10-приоритет) 90 - (12-приоритет) 5
+
+const a = 6 + 10 / 2 // 1) /  2) +
+const b = (6 + 10) / 2 // 1) + 2) /
+console.log(a)
+console.log(b)
+
+let b1
+let c1
+c1 = b1 = 100 + 50 // 1) +  2) & 3) операторы присваивания по очереди справа налево
+console.log(c1)
+console.log(b1)
