@@ -1,30 +1,20 @@
-const money = 10
-const canBuy = money > 50
+/*
+    Вася положил 12000$ на вклад 7% годовых с капитализацией 1 раз в месяц.
+    Вывести в консоль, сможет ли он купить дом за 13500$ через 2 года после снятия вклада.
+    И остаток после покупки.
 
-if (canBuy) {
-  console.log('Может купить наш продукт')
+    Итог = сумма * (1 + ставка в месяц не в %) ^ срок в месяцах 
+*/
+
+const deposit = 10000
+const rate = 0.07
+const depositLength = 24
+const houseCost = 13500
+
+const res = deposit * (1 + rate / 12) ** 24
+
+if (res > houseCost) {
+  console.log(`Мы накопили: ${res}. Можем купить. Остаток ${res - houseCost}`)
 } else {
-  console.log('Не хватает баланса')
+  console.log(`Мы накопили: ${res}. Купить не сможем (((`)
 }
-
-console.log('Итог')
-
-// чаще пишут так
-const money2 = 51
-if (money2 > 50) {
-  console.log('Может купить наш продукт 2')
-} else {
-  console.log('Не хватает баланса 2')
-}
-
-// else if
-const money3 = 100
-if (money3 > 50) {
-  console.log('Может купить наш продукт 3')
-} else if (money > 55) {
-  console.log('Куплен mini продукт 3')
-} else {
-  console.log('Не хватает баланса 3')
-}
-
-console.log('Итог 3')
