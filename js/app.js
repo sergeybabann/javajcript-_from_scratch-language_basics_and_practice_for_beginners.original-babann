@@ -1,38 +1,26 @@
-const secretNumber = 7
+const role = 'manager'
 
-if (secretNumber === 7) {
-  console.log('Угадал строго')
+if (role === 'manager') {
+  console.log('Менеджер')
+} else if (role === 'admin') {
+  console.log('Админ')
+} else if (role === 'ceo') {
+  console.log('CEO')
+} else {
+  console.log('Мы тебя не знаем!')
 }
 
-if (secretNumber == 7) {
-  console.log('Угадал не строго')
-}
-
-// -------------------------------------------
-const secretNumber2 = '7'
-
-if (Number(secretNumber2) === 7) {
-  // явное привидение типа строки к числу.
-  console.log('Угадал строго2')
-}
-
-if (secretNumber2 == 7) {
-  console.log('Угадал не строго2')
-}
-
-//----------------------------------------------
-
-const q = prompt('Введите число')
-if (q == 7) {
-  console.log('Угадал не строго3')
-}
-
-const q2 = prompt('Введите число')
-if (q2 === 7) {
-  console.log('Что такое?')
-}
-
-const q3 = Number(prompt('Введите число')) // явное привидение строки в число
-if (q3 === 7) {
-  console.log('Угадал строго3')
+//----------------------------------------------------
+switch (role) {
+  case 'manager': // role === 'manager'
+    console.log('Менеджер')
+    break
+  case 'admin': // role === 'admin'
+    console.log('Админ')
+    break
+  case 'ceo': //role === 'ceo'
+    console.log('CEO')
+    break
+  default:
+    console.log('Мы тебя не знаем!')
 }
