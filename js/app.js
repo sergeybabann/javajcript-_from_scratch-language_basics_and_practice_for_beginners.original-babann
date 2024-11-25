@@ -1,16 +1,5 @@
-const role = 'manager'
+const role = 'ceo'
 
-if (role === 'manager') {
-  console.log('Менеджер')
-} else if (role === 'admin') {
-  console.log('Админ')
-} else if (role === 'ceo') {
-  console.log('CEO')
-} else {
-  console.log('Мы тебя не знаем!')
-}
-
-//----------------------------------------------------
 switch (role) {
   case 'manager': // role === 'manager'
     console.log('Менеджер')
@@ -23,4 +12,31 @@ switch (role) {
     break
   default:
     console.log('Мы тебя не знаем!')
+}
+
+//----------------------------------------------------
+
+switch (role) {
+  case 'manager': // role === 'manager'
+  case 'admin': // role === 'admin'
+    console.log('Не руководитель')
+    break
+  case 'ceo': //role === 'ceo'
+    console.log('Руководитель')
+    break
+  default:
+    console.log('Мы тебя не знаем!')
+}
+
+//----------------------------------------------------
+const num = 1
+switch (true) {
+  case num > 0: // true === num > 0
+    console.log('Положительный')
+    break
+  case num < 0:
+    console.log('Отрицательный')
+    break
+  default:
+    console.log('Ноль!')
 }
