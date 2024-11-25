@@ -1,20 +1,38 @@
-/*
-    Вася положил 12000$ на вклад 7% годовых с капитализацией 1 раз в месяц.
-    Вывести в консоль, сможет ли он купить дом за 13500$ через 2 года после снятия вклада.
-    И остаток после покупки.
+const secretNumber = 7
 
-    Итог = сумма * (1 + ставка в месяц не в %) ^ срок в месяцах 
-*/
+if (secretNumber === 7) {
+  console.log('Угадал строго')
+}
 
-const deposit = 10000
-const rate = 0.07
-const depositLength = 24
-const houseCost = 13500
+if (secretNumber == 7) {
+  console.log('Угадал не строго')
+}
 
-const res = deposit * (1 + rate / 12) ** 24
+// -------------------------------------------
+const secretNumber2 = '7'
 
-if (res > houseCost) {
-  console.log(`Мы накопили: ${res}. Можем купить. Остаток ${res - houseCost}`)
-} else {
-  console.log(`Мы накопили: ${res}. Купить не сможем (((`)
+if (Number(secretNumber2) === 7) {
+  // явное привидение типа строки к числу.
+  console.log('Угадал строго2')
+}
+
+if (secretNumber2 == 7) {
+  console.log('Угадал не строго2')
+}
+
+//----------------------------------------------
+
+const q = prompt('Введите число')
+if (q == 7) {
+  console.log('Угадал не строго3')
+}
+
+const q2 = prompt('Введите число')
+if (q2 === 7) {
+  console.log('Что такое?')
+}
+
+const q3 = Number(prompt('Введите число')) // явное привидение строки в число
+if (q3 === 7) {
+  console.log('Угадал строго3')
 }
