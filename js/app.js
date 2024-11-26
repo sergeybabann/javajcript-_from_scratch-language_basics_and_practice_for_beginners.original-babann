@@ -1,18 +1,18 @@
-/* 
-Методом prompt получите ответ пользователя на ответ "Сколько будет 7 + или - 15?"
-Если ответ верен выведите в консоли "Успех", если нет - "Вы робот!",
-а если он введет "я не робот!", то тоже "Успех". 
-*/
+const isAdmin = true
+const canWrite = true
+console.log(`Системный файл ${isAdmin && canWrite}`)
+console.log(`Обычный файл ${isAdmin || canWrite}`)
+console.log(`Инвертируем права админа ${!isAdmin}`)
 
-// обычная запись
-const res = prompt('Сколько будет 7 + или - 15?')
+const isEdited = true
+const isSuperAdmin = true
 
-switch (true) {
-  case res === 'я не робот':
-  case Number(res) === 22:
-  case Number(res) === -8:
-    console.log('Успех')
-    break
-  default:
-    console.log('Вы робот!')
+console.log(
+  `Системный файл с редактированием ${
+    isAdmin && canWrite && (!isEdited || isSuperAdmin)
+  }`
+)
+
+let a = 7
+if (a === -8 || a === 22) {
 }
