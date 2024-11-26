@@ -4,15 +4,19 @@
 а если он введет "я не робот!", то тоже "Успех". 
 */
 
-// обычная запись
+// альтернативная запись
 const res = prompt('Сколько будет 7 + или - 15?')
 
-switch (true) {
-  case res === 'я не робот':
-  case Number(res) === 22:
-  case Number(res) === -8:
-    console.log('Успех')
-    break
-  default:
-    console.log('Вы робот!')
+if (res === 'я не робот') {
+  console.log('Успех')
+} else {
+  const resNum = Number(res)
+  switch (resNum) {
+    case 22:
+    case -8:
+      console.log('Успех')
+      break
+    default:
+      console.log('Вы робот!')
+  }
 }
