@@ -1,34 +1,18 @@
-// классический вариант записи if
+const isAdmin = true
+const canWrite = true
+console.log(`Системный файл ${isAdmin && canWrite}`)
+console.log(`Обычный файл ${isAdmin || canWrite}`)
+console.log(`Инвертируем права админа ${!isAdmin}`)
 
-const bmwX3Price = 100000
-const budget = 200000
+const isEdited = true
+const isSuperAdmin = true
 
-let message
+console.log(
+  `Системный файл с редактированием ${
+    isAdmin && canWrite && (!isEdited || isSuperAdmin)
+  }`
+)
 
-if (budget > bmwX3Price) {
-  message = 'BMW'
-} else {
-  message = 'Велосипед'
+let a = 7
+if (a === -8 || a === 22) {
 }
-
-// вывод записи if с тернарным оператором
-console.log(`Хочу купить ${budget > bmwX3Price ? 'BMW' : 'Велосипед'}`)
-
-// запись if с тернарным оператором
-const str = 10 > 0 ? console.log('Больше 0') : console.log('Не больше')
-console.log(str)
-
-// использование одного тернарного оператора внутри другого
-const iPhonePrice = 120000
-const sumsungGalaxyPrice = 100000
-const budget2 = 99000
-
-let message2 =
-  budget2 > iPhonePrice
-    ? 'iPhone'
-    : budget2 > sumsungGalaxyPrice
-    ? 'Samsung Galaxy'
-    : 'Кнопочный телефон'
-
-//
-console.log(`Я хочу купить ${message2}`)
