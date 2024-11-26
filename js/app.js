@@ -1,42 +1,34 @@
-const role = 'ceo'
+// классический вариант записи if
 
-switch (role) {
-  case 'manager': // role === 'manager'
-    console.log('Менеджер')
-    break
-  case 'admin': // role === 'admin'
-    console.log('Админ')
-    break
-  case 'ceo': //role === 'ceo'
-    console.log('CEO')
-    break
-  default:
-    console.log('Мы тебя не знаем!')
+const bmwX3Price = 100000
+const budget = 200000
+
+let message
+
+if (budget > bmwX3Price) {
+  message = 'BMW'
+} else {
+  message = 'Велосипед'
 }
 
-//----------------------------------------------------
+// вывод записи if с тернарным оператором
+console.log(`Хочу купить ${budget > bmwX3Price ? 'BMW' : 'Велосипед'}`)
 
-switch (role) {
-  case 'manager': // role === 'manager'
-  case 'admin': // role === 'admin'
-    console.log('Не руководитель')
-    break
-  case 'ceo': //role === 'ceo'
-    console.log('Руководитель')
-    break
-  default:
-    console.log('Мы тебя не знаем!')
-}
+// запись if с тернарным оператором
+const str = 10 > 0 ? console.log('Больше 0') : console.log('Не больше')
+console.log(str)
 
-//----------------------------------------------------
-const num = 1
-switch (true) {
-  case num > 0: // true === num > 0
-    console.log('Положительный')
-    break
-  case num < 0:
-    console.log('Отрицательный')
-    break
-  default:
-    console.log('Ноль!')
-}
+// использование одного тернарного оператора внутри другого
+const iPhonePrice = 120000
+const sumsungGalaxyPrice = 100000
+const budget2 = 99000
+
+let message2 =
+  budget2 > iPhonePrice
+    ? 'iPhone'
+    : budget2 > sumsungGalaxyPrice
+    ? 'Samsung Galaxy'
+    : 'Кнопочный телефон'
+
+//
+console.log(`Я хочу купить ${message2}`)
