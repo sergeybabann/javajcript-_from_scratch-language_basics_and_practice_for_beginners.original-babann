@@ -1,23 +1,20 @@
-let username
-let username_1 = 'Вася'
-let username_2 = null
-let username_3 = undefined
-let username_4 = ''
-let username_5 = ''
-let username_6 = 0
+/*
+  Пользователь хочет преобрести игру в магазине 
+  Он может это сделать только если:
+  - Его баланс больше 100 (balance)
+  или число бонусов больше 100 (bonusBalance)
+  - Он не забанен (isBanned)
+  - Игра не куплена (isExist)
+  - Игра в продаже (isSelling)
+  Напишите условие для покупки и выведите в консоль результат
+*/
 
-console.log(username || 'Default Username')
-console.log(username_1 || 'Default Username')
-console.log(username_2 || 'Default Username')
-console.log(username_3 || 'Default Username')
-console.log(username_4 || 'Default Username')
-console.log(username_5 ?? 'Default Username')
-console.log(username_6 ?? 'Default Username')
+const balance = 100
+const bonusBalance = 900
+const isBanned = false
+const isExist = false
+const isSelling = true
 
-let age = 18
-console.log(age || 18)
-console.log(age ?? 18)
-
-let age_2 = 0
-console.log(age || 18)
-console.log(age ?? 18)
+const canBuy =
+  (balance > 1000 || bonusBalance > 100) && !isBanned && !isExist && isSelling
+console.log(`Могу купить игру: ${canBuy ? 'да' : 'нет'}`)
