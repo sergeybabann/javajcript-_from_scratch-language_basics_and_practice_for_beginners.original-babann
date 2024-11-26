@@ -1,17 +1,23 @@
-console.log('Вася' || 'Олег')
-console.log(false || 'Олег')
-console.log('Вася' || false)
-console.log(false || false)
+let username
+let username_1 = 'Вася'
+let username_2 = null
+let username_3 = undefined
+let username_4 = ''
+let username_5 = ''
+let username_6 = 0
 
-console.log('Вася' && 'Олег')
-console.log(false && 'Олег')
-console.log('Вася' && false)
-console.log(false || false)
+console.log(username || 'Default Username')
+console.log(username_1 || 'Default Username')
+console.log(username_2 || 'Default Username')
+console.log(username_3 || 'Default Username')
+console.log(username_4 || 'Default Username')
+console.log(username_5 ?? 'Default Username')
+console.log(username_6 ?? 'Default Username')
 
-let a = 'Марина'
-const username = a || 'Петя'
-console.log(username)
+let age = 18
+console.log(age || 18)
+console.log(age ?? 18)
 
-const isAdmin = true
-const filename = isAdmin && 'file.mp4'
-console.log(filename)
+let age_2 = 0
+console.log(age || 18)
+console.log(age ?? 18)
