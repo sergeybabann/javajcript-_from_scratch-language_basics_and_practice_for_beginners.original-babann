@@ -1,20 +1,16 @@
-/*
-  Пользователь хочет преобрести игру в магазине 
-  Он может это сделать только если:
-  - Его баланс больше 100 (balance)
-  или число бонусов больше 100 (bonusBalance)
-  - Он не забанен (isBanned)
-  - Игра не куплена (isExist)
-  - Игра в продаже (isSelling)
-  Напишите условие для покупки и выведите в консоль результат
-*/
+function logName(name, surname) {
+  console.log(`Мое имя ${name} ${surname}`)
+}
 
-const balance = 100
-const bonusBalance = 900
-const isBanned = false
-const isExist = false
-const isSelling = true
+logName('Антон', 'Ларичев')
 
-const canBuy =
-  (balance > 1000 || bonusBalance > 100) && !isBanned && !isExist && isSelling
-console.log(`Могу купить игру: ${canBuy ? 'да' : 'нет'}`)
+function countDepositSum(depositInUSD, month, rate) {
+  const sum = depositInUSD * (1 + rate / 12) ** month
+  return sum
+}
+
+const example1 = countDepositSum(1000, 24, 0.12)
+console.log(example1)
+
+const example2 = countDepositSum(1000, 48, 0.1)
+console.log(example2)
