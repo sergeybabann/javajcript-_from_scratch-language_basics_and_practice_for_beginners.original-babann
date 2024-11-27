@@ -1,20 +1,19 @@
-const users = ['Аня', 'Вика', 'Катя']
-console.log(users)
-users[2] = 'Кристина' // замена элемента массива, который в индексе 2
-console.log(users)
+const roles = ['user', 'admin', 'manager']
 
-const arrLenght = users.push('Никита') // добавление элемента в конец массива
-console.log(users)
-console.log(arrLenght)
+const elIndex = roles.indexOf('admin') // поиск элемента массива
+console.log(elIndex) // 1
 
-users.unshift('Вася') // добавление элемента в начало массива
-console.log(users)
+const elIndex2 = roles.indexOf('superuser') // поиск элемента массива. Этого элемента нет в массиве,
+// и он поэтому отрицательный
+console.log(elIndex2) // -1
 
-const el = users.pop() // удаление элемента из конца массива, pop возвращает удаленный элемент,
-// не возвращает длину массива и не перечисляет элементы массива, только удаленный элемент
-console.log(el) // вывод удаленного элемента
-console.log(users) // вывод массива, где удален элемент Никита
+if (roles.indexOf('admin') >= 0) {
+  console.log('Доступ есть') // Доступ есть
+}
 
-const el2 = users.shift() // удаление элемента из начала массива, shift возвращает удаленный элемент
-console.log(el2) // вывод удаленного элемента
-console.log(users) // вывод массива, с удаленным элементом
+if (roles.indexOf('superuser') >= 0) {
+  console.log('Доступ есть') // такого элемента в массиве нет, поэтому ничего не выводится
+}
+
+console.log(roles.includes('admin')) // true - такой элемента есть в массиве
+console.log(roles.includes('superadmin')) // false - такого элемента нет в массиве
