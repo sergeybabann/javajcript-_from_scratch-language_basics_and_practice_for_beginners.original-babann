@@ -1,15 +1,12 @@
-// обычная функция
-function powerOfTwo(num) {
-  console.log(num)
-  return num * num
+/* переписать функцию в стрлочную  */
+function toPower(num, power) {
+  const res = num ** power
+  return res
 }
 
-console.log(powerOfTwo(5))
+console.log(toPower(2, 3))
 
 // стрелочная функция
-// то что до стрелки - это аргументы, то что после стрелки - это то, что будет возвращать функция
-const poft = (num) => {
-  console.log(num)
-  return num * num
-}
-console.log(poft(6))
+const toPowerArrow = (num, power) => num ** power
+
+console.log(toPowerArrow(2, 3))
