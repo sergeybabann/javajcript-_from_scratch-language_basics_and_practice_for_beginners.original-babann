@@ -16,6 +16,6 @@ github repo:
 
 https://github.com/sergeybabann/javajcript-_from_scratch-language_basics_and_practice_for_beginners.original-babann
 
-- video stop: 07 функции --> 
+- video stop: 
 
 -----------------------------------------------------------------------------------------------------------------

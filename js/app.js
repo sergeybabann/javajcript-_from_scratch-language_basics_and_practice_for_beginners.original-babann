@@ -1,23 +1,20 @@
-const role1 = 'admin'
-const role2 = 'user'
-const role3 = 'superuser'
+const users = ['Аня', 'Вика', 'Катя']
+console.log(users)
+users[2] = 'Кристина' // замена элемента массива, который в индексе 2
+console.log(users)
 
-const roles = ['admin', 'user', 'superuser']
-const userInfo = ['Аня', 25]
-console.log(roles)
-console.log(roles[0])
-console.log(roles[roles.length - 1]) // вывести последний элемент массива
-console.log(roles.at(0)) //
-console.log(roles.at(-1)) // вывести последний элемент массива
+const arrLenght = users.push('Никита') // добавление элемента в конец массива
+console.log(users)
+console.log(arrLenght)
 
-const usersAge = [2040 - 2022, 20 - '6', 10 > 0 ? 5 : 0]
-console.log(usersAge)
+users.unshift('Вася') // добавление элемента в начало массива
+console.log(users)
 
-const userNames = new Array('Вася', 'Петя', 'Катя')
-console.log(userNames)
+const el = users.pop() // удаление элемента из конца массива, pop возвращает удаленный элемент,
+// не возвращает длину массива и не перечисляет элементы массива, только удаленный элемент
+console.log(el) // вывод удаленного элемента
+console.log(users) // вывод массива, где удален элемент Никита
 
-function square(el) {
-  return el * el
-}
-
-console.log(square([1, 2, 3]))
+const el2 = users.shift() // удаление элемента из начала массива, shift возвращает удаленный элемент
+console.log(el2) // вывод удаленного элемента
+console.log(users) // вывод массива, с удаленным элементом
