@@ -17,9 +17,9 @@ splice - модифицирует массив, в качестве первог
 
 1) slice - пройден
 2) splice - пройден 
-3) reverse
+3) reverse - пройден
 
 
 ----- Шаблон для git ----- 
-02 пункт урока пройден: 08 массивы --> 42 Slice, splice, concat, reverse: 1) метод splice
+03 пункт урока пройден: 08 массивы --> 42 Slice, splice, concat, reverse: 3) метод reverse
 lesson complete: 08 массивы --> 42 Slice, splice, concat, reverse
