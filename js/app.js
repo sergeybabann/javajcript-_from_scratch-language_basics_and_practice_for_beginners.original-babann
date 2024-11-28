@@ -1,16 +1,14 @@
-const roles = ['user', 'admin', 'manager', 'superuser', 'ceo']
+const roles = ['user', 'admin', 'manager', 'superuser']
 
-const res = roles.slice(2)
-console.log(roles)
-console.log(res)
+const res = roles.splice(2) // удаляет все элементы из массива начиная с индекса 2
+console.log(res) // вывод удаленных элементов из массива 2, 3
+console.log(roles) // вывод элементов 0, 1
 
-const res2 = roles.slice(0, 2) // от индекса 0 и до индекса 2 - но 2 не включается
-console.log(res2)
+const res2 = roles.splice(2, 1) // 1-ый аргумент указывает с какого индекса начинть
+// 2-ой аргумент указывает длину, которую нужно взять
+console.log(res2) // выводит удаленные из массива элементы
+console.log(roles) // выводит модифицированный массив
 
-const res3 = roles.slice(-1)[0] // эти 2 записи идентичны
-const res4 = roles[roles.length - 1] // эти 2 записи идентичны
-console.log(res3) // ceo
-console.log(res4) // ceo
-
-const res5 = roles.slice(1, -2) // от индекса 1 и до индекса -1, но -1 не включается
-console.log(res5)
+const res3 = roles.splice(-1) // удаляет последний элемент из массива
+console.log(res3) //
+console.log(roles) //
