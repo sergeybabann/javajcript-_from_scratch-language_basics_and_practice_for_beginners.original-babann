@@ -1,6 +1,6 @@
-const roles = ['user', 'admin', 'manager', 'superuser']
-console.log(roles)
-const res = roles.reverse() // метод reverse реверсирует массив, переворачивает с начала в конец.
-console.log(res)
+const roles = ['admin', 'user', 'manager', 'superuser']
 
-console.log(roles)
+const newRoles = ['sysadmin', 'developer']
+
+const res = roles.concat(newRoles) // конкатенация двух массивов
+console.log(res)
