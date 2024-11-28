@@ -9,7 +9,9 @@ indexOf - возвращает индекс массива от -1 и выше
 includes - возвращает true или false
 includes - очень часто используется в условиях
 
+----- 42 Slice, splice, concat, reverse -----
+
 
 ----- Шаблон для git ----- 
-01 пункт урока пройден: 
-lesson complete: 08 массивы --> 41 Поиск элемента
+01 пункт урока пройден: 08 массивы --> 42 Slice, splice, concat, reverse: 1) метод slice
+lesson complete: 08 массивы --> 42 Slice, splice, concat, reverse

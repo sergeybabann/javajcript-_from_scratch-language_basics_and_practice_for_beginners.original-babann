@@ -1,19 +1,16 @@
-const roles = ['user', 'admin', 'manager']
+const roles = ['user', 'admin', 'manager', 'superuser', 'ceo']
 
-const elIndex = roles.indexOf('admin') // поиск элемента массива
-console.log(elIndex) // 1
+const res = roles.slice(2)
+console.log(roles)
+console.log(res)
 
-const elIndex2 = roles.indexOf('superuser') // поиск элемента массива. Этого элемента нет в массиве,
-// и он поэтому отрицательный
-console.log(elIndex2) // -1
+const res2 = roles.slice(0, 2) // от индекса 0 и до индекса 2 - но 2 не включается
+console.log(res2)
 
-if (roles.indexOf('admin') >= 0) {
-  console.log('Доступ есть') // Доступ есть
-}
+const res3 = roles.slice(-1)[0] // эти 2 записи идентичны
+const res4 = roles[roles.length - 1] // эти 2 записи идентичны
+console.log(res3) // ceo
+console.log(res4) // ceo
 
-if (roles.indexOf('superuser') >= 0) {
-  console.log('Доступ есть') // такого элемента в массиве нет, поэтому ничего не выводится
-}
-
-console.log(roles.includes('admin')) // true - такой элемента есть в массиве
-console.log(roles.includes('superadmin')) // false - такого элемента нет в массиве
+const res5 = roles.slice(1, -2) // от индекса 1 и до индекса -1, но -1 не включается
+console.log(res5)
